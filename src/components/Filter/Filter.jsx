@@ -6,9 +6,10 @@ const Filter = () => {
   const dispatch = useDispatch();
 
 
-  const handleChange = (query) => {
-    dispatch(filterContacts(query));
+  const handleChange = e => {
+    dispatch(filterContacts(e.target.value.trim()));
   };
+ 
 
   return (
     <div>

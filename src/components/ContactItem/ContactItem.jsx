@@ -3,7 +3,7 @@ import { useDispatch } from "react-redux";
 import Button from "../Button/Button";
 
 import s from "./ContactItem.module.css";
-import { deleteContact } from "../../redux/contact/contactsSlice";
+import { deleteContact } from "../../redux/contact/contactsOperations";
 
 const ContactItem = ({ id, name, number }) => {
   const dispatch = useDispatch();
